@@ -6,13 +6,13 @@ declare (strict_types = 1);
 
  enum Status : string {
     case DONE = "Fait";
-    case WAITING = "Accompli";
+    case WAITING = "En attente";
 
     public function badgeClass() : string
     {
         return match ($this){
-            SELF::DONE => 'text-success',
-            SELF::WAITING => 'text-secondary',
+            SELF::DONE => 'text-bg-success',
+            SELF::WAITING => 'text-bg-secondary',
         };
     }
  }
