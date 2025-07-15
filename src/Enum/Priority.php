@@ -13,9 +13,9 @@ declare (strict_types = 1);
     public function badgeClass(): string{
         return match ($this){
 
-            SELF::HIGH => 'text-bg-danger',
-            SELF::MEDIUM => 'text-bg-warning',
-            SELF::LOW => 'text-bg-primary',
+            self::HIGH => 'text-bg-danger',
+            self::MEDIUM => 'text-bg-warning',
+            self::LOW => 'text-bg-primary',
 
 
         };

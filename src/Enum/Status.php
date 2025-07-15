@@ -11,8 +11,8 @@ declare (strict_types = 1);
     public function badgeClass() : string
     {
         return match ($this){
-            SELF::DONE => 'text-bg-success',
-            SELF::WAITING => 'text-bg-secondary',
+            self::DONE => 'text-bg-success',
+            self::WAITING => 'text-bg-secondary',
         };
     }
  }
