@@ -41,7 +41,7 @@ h1{
     align-self: center;
 }
 
-.login, .register{
+.login, .register,form{
 
     width: 50%;
     height: 75%;
@@ -51,7 +51,7 @@ h1{
     gap: 1rem;
 }
 
-.login h1 , .login label, .logout, .register, h1{
+.login h1 , .login label, .logout, .register, h1, a{
     color: white;
 }
 
@@ -69,4 +69,54 @@ h1{
 
 }
 
+.btn-del{
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: rgb(214, 49, 16);
+    color: white;
+    border-radius: 1rem;
+    border: none;
 
+}
+
+
+
+
+.table, tr, th, td, a{
+    padding: 1rem;
+    color: white;
+}
+
+
+ a{
+    text-decoration: none;
+}
+
+
+ tr, th, td{
+   border: 1px solid black;
+}
+
+thead, th{
+    background-color: black;
+}
+
+.text-bg-danger{
+    background-color: red;
+}
+
+.text-bg-warning{
+    background-color: orange;
+}
+
+.text-bg-primary{
+    background-color: rgb(4, 116, 244);
+}
+
+.text-bg-success{
+    background-color: rgb(16, 191, 16);
+}
+
+.text-bg-secondary{
+    background-color: lightgray;
+} 

@@ -3,7 +3,7 @@
 {% block title %}Ticket index{% endblock %}
 
 {% block body %}
-    <h1>Ticket index</h1>
+    <h1>Liste des Tickets</h1>
 
     <table class="table">
         <thead>
@@ -13,7 +13,7 @@
                 <th>Description</th>
                 <th>Priority</th>
                 <th>Status</th>
-                <th>Created_at</th>
+                <th>Créé le :</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -23,12 +23,12 @@
                 <td>{{ ticket.id }}</td>
                 <td>{{ ticket.title }}</td>
                 <td>{{ ticket.description }}</td>
-                <td>{{ ticket.priority.value }}</td>
-                <td>{{ ticket.status.value }}</td>
+                <td class="{{ticket.priority.badgeclass()}}" >{{ ticket.priority.value }}</td>
+                <td class="{{ticket.status.badgeclass()}}">{{ ticket.status.value }}</td>
                 <td>{{ ticket.createdAt ? ticket.createdAt|date('Y-m-d H:i:s') : '' }}</td>
                 <td>
-                    <a href="{{ path('app_ticket_show', {'id': ticket.id}) }}">show</a>
-                    <a href="{{ path('app_ticket_edit', {'id': ticket.id}) }}">edit</a>
+                    <a href="{{ path('app_ticket_show', {'id': ticket.id}) }}">Voir</a>
+                    <a href="{{ path('app_ticket_edit', {'id': ticket.id}) }}">Modifier</a>
                 </td>
             </tr>
         {% else %}
@@ -39,5 +39,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('app_ticket_new') }}">Create new</a>
+    <a href="{{ path('app_ticket_new') }}">Ajouter nouveau</a>
 {% endblock %}
