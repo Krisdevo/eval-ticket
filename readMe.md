@@ -1,6 +1,6 @@
 # HELPDESK 
 
-![Screenshot de l'index de Cartes.](assets\images\screen.png)
+![Screenshot de l'index de Cartes.](public\images\screen.png)
 
 ## Introduction
 
